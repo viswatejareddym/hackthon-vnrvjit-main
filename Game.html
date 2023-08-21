@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Hacket</title>
+    <link rel="icon" type="image/png" sizes="128x128" href="images/favicon.png">
+    
+    <link rel="stylesheet" href="assets/css/style1.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/main2.css" type="text/css">
+    <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+    <script src="assets/js/cards.js" type="text/javascript"></script>
+</head>
+
+  <body>
+    <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="index.html">CyberAware</a></h1>
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Solutions.html">Solutions</a></li>
+          <li><a href="videos.html">Videos</a></li>
+          <li><a class="active" href="Game.html">Playground</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+    <div class="game-board">
+
+      <div class="hacker-area">
+
+        <h1>
+          <strong>HACKER CARDS</strong> <br/> Choose the best card to stop the hackers' attack
+        </h1>
+
+        <div class="stats hacker-stats">
+          <div class="life-bar">
+            <div class="life-left hacker-color"></div>
+          </div>
+          <div class="life-total"></div>
+          <!-- Change the name and emoji here -->
+          <div class="thumbnail">👹</div>
+          <div class="name">Hacker</div>
+        </div>
+        
+        <div class="card hacker-card hacker-color">
+          <div class="text"></div>
+          <div class="power"></div>
+        </div>
+
+      </div>
+
+      <div class="player-area">
+
+        <div class="stats player-stats">
+          <div class="life-bar">
+            <div class="life-left player-color"></div>
+          </div>
+          <div class="life-total"></div>
+          <!-- Change the name and emoji here -->
+          <div class="thumbnail">🙍‍♂️</div>
+          <div class="name">You</div>
+        </div>
+
+        <div class="card player-card player-color">
+          <div class="text"></div>
+          <div class="power"></div>
+        </div>
+
+        <div class="card player-card player-color">
+          <div class="text"></div>
+          <div class="power"></div>
+        </div>
+
+        <div class="card player-card player-color">
+          <div class="text"></div>
+          <div class="power"></div>
+        </div>
+
+        <button class="start-game" onClick="startGame()">Play the Game!</button>
+        <button class="next-turn" onClick="playTurn()">Next!</button>
+      </div>
+    </div>
+
+
+
+    <div class="winner-section">
+      <div>
+        <span class="winner-message">You got hacked!</span>
+        <button class="restart" onClick="location.reload()">Play Again</button>
+      </div>
+    </div>
+
+    <script src="assets/js/script.js" type="text/javascript"></script>
+     <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  </body>
+</html>

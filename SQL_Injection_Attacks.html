@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>SQL Injection Attacks</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="index.html">CyberAware</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="Solutions.html">Solutions</a></li>
+          <li><a href="">Videos</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <a href="Solutions.html" class="get-started-btn">Get Started</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs" data-aos="fade-in">
+      <div class="container">
+        <h2>SQL Injection</h2>
+        
+      </div>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <img src="assets/img/sql.jpg" class="img-fluid" alt="">
+            <br><br><br>
+            <img src="assets/img/sql_p.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+            <h2>What is SQL Injection & How it is done?</h2>
+            <p style="text-align: justify;"><br>
+              SQL injection is a type of security vulnerability that occurs in web applications that use Structured Query Language (SQL) to interact with a database. The vulnerability allows an attacker to inject malicious SQL code into a web application's input fields, allowing them to manipulate the database in various ways, such as extracting sensitive data or modifying its contents.<br>
+
+SQL injection attacks are often carried out by submitting malicious input into web forms or by crafting URLs that contain malicious SQL code. When the web application processes this input, it may execute the malicious SQL code and compromise the security of the underlying database.<br>
+
+To prevent SQL injection attacks, it is important to validate user input, sanitize it to remove any malicious characters, and use parameterized queries instead of concatenating user input directly into SQL statements. Additionally, web developers should be familiar with the security features provided by their database management systems and use them to secure their databases.<br>
+
+            </p>
+            <h2>Process :</h2>
+            <p style="text-align: justify;">
+              SQL injection attacks occur when a web application does not properly validate or sanitize user input before using it in SQL statements that interact with a database. The attacker can exploit this vulnerability by injecting malicious SQL code into the input fields of the web application. The following is a general overview of the process of an SQL injection attack:<br><br>
+
+1.<b>Identification:</b> The attacker identifies a vulnerable web application that uses SQL to interact with a database.<br>
+
+2.<b>Input Tampering:</b> The attacker manipulates the input fields of the web application to include malicious SQL code.<br>
+
+3.<b>Execution:</b> The web application processes the malicious input and executes the injected SQL code.<br>
+
+4.<b>Data Retrieval:</b> The attacker can use the executed SQL code to retrieve sensitive data from the database, such as passwords, credit card numbers, or personal information.<br>
+
+5.<b>Data Modification:</b> The attacker can also use the executed SQL code to modify the contents of the database, such as altering or deleting records.<br>
+
+6.<b>Command Execution:</b> In some cases, the attacker can also use SQL injection to execute arbitrary commands on the underlying system, potentially compromising the security of the entire server.<br>
+
+It is important to note that SQL injection attacks can have serious consequences, including theft of sensitive information, disruption of services, and financial loss. To prevent these attacks, web developers should properly validate and sanitize user input and use parameterized queries to interact with databases.
+
+            </p>
+            <h3>Awareness on SQL Injection for Post-production</h3>
+            <p class="fst-italic">
+              
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> Input validation</li>
+              <li><i class="bi bi-check-circle"></i> Parameteized Queies</li>
+              <li><i class="bi bi-check-circle"></i> Escaping Special Characters</li>
+              <li><i class="bi bi-check-circle"></i> Stored Procedure</li>
+              <li><i class="bi bi-check-circle"></i> Least Privilege</li>
+              <li><i class="bi bi-check-circle"></i> Regular Updates</li>
+              <li><i class="bi bi-check-circle"></i> Monitoring</li>
+              <li><i class="bi bi-check-circle"></i> Security Awareness</li>
+            </ul>
+          </div>
+        </div>
+        <h3>Case Study :-</h3>
+        <p style="text-align: justify;"><br>
+          One real-world example of an SQL injection attack on a post-production company is the attack on Sonic DVD. In 2007, Sonic DVD, a leading producer of DVD software, suffered a major data breach as a result of an SQL injection attack. The attacker was able to inject malicious SQL code into the company's web application, gaining access to sensitive information such as customer names, addresses, credit card numbers, and more.<br>
+
+The attack had a significant impact on Sonic DVD and its customers. The company had to spend a considerable amount of time and resources to investigate the breach, secure its systems, and inform affected customers. Many of its customers had their personal and financial information compromised, leading to identity theft and financial losses.<br>
+
+This attack highlights the importance of properly securing web applications and databases to prevent SQL injection attacks. By implementing best practices such as input validation, parameterized queries, and regular security updates, organizations can reduce the risk of these attacks and protect their sensitive information.
+        </p>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <!-- End Counts Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>CyberAware</h3>
+            <p>
+              Nandyal <br>
+              Andhra Pradesh<br>
+              India<br><br>
+              <strong>Phone:</strong> 7702661217<br>
+              <strong>Email:</strong> admin@cyberaware.live<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="ransomeware.html">Ransomeware</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Malware_infections.html">Malware</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Man_in_the_middle.html">man in the middle</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="data_breaches.html">Data Breaches</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Phishing_scams.html">Phishing Scams</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>CyberAware</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by <a href="https://bootstrapmade.com/">varunbiluri & Team</a>
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
